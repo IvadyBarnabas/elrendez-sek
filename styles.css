@@ -20,9 +20,9 @@ nav ul{
 }
 article {
     grid-area:a;
-}
-section {
-    grid-area:s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 .bal {
     grid-area:b;
@@ -32,4 +32,97 @@ section {
 }
 footer {
     grid-area:f;
+}
+#fanbase {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    object-fit: cover;
+    margin: 10px;
+    color: black;
+    transform: scale(0.8);
+    max-height: 650px;
+    font-weight: bold;      
+}
+#fanbase h3{
+    color: white;
+    border-radius: 5px;
+    background-color:rgb(16, 165, 23);
+    width: 25%;
+    margin: auto;   
+}
+
+#fanbase img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+#fanbase .price{
+    font-size: 25px;
+}
+#anteiku{
+    background: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    object-fit: cover;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    transform: scale(0.8);
+}
+#anteiku img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+#anteiku h3{
+    background-color: rgb(63, 63, 63);
+    position: left;
+    text-align: center;
+    width: 40%;
+    border-radius: 5px;
+    padding: 5px;
+}
+#anteikutudnivalo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+#anteiku .price{
+    position: left;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+#collectors{
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    border: solid rgb(49, 49, 49) 5px;
+    text-align: center;
+    object-fit: cover;
+    margin: 10px;
+    color: white;
+    transform: scale(0.8);
+    max-height: 650px;  
+}
+#collectors img{
+    max-width: 100%;
+    border-radius: 8px;
+    border: solid rgb(49, 49, 49) 5px;
+}
+#collectors .price{
+    color: rgb(0, 255, 149);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+#collectors h3{
+    color: black;
+    border: solid rgb(0, 255, 149);
+    border-radius: 10px;
+    background-color:rgb(0, 255, 149);
+    width: 25%;
+    margin: auto;
 }
